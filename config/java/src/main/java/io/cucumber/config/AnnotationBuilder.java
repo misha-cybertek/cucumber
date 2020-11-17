@@ -13,6 +13,10 @@ class AnnotationBuilder implements MapBuilder {
         this.annotation = annotation;
     }
 
+    AnnotationBuilder(Annotation annotation, String type) {
+        this.annotation = annotation;
+    }
+
     @Override
     public Map<String, ?> buildMap() {
         Map<String, Object> result = new HashMap<>();
