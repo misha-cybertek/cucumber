@@ -22,4 +22,9 @@ class JsonBuilder implements MapBuilder {
     public Map<String, ?> buildMap() {
         return getMap(keys, map);
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

@@ -7,9 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 class AnnotationBuilder implements MapBuilder {
-    private Annotation annotation;
+    public Annotation annotation;
 
     AnnotationBuilder(Annotation annotation) {
+        this.annotation = annotation;
+    }
+
+    AnnotationBuilder(Annotation annotation, String type) {
         this.annotation = annotation;
     }
 
